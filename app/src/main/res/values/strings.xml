@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Beta1</string>
+    <string name="todo">todo</string>
+    <string name="do_not_leave_the_date_options_blank_or_the_system_wont_update_the_user">Do not leave the Date options blank, or the system won\'t update the user.</string>
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="Home Activity"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/profilebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pieLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Open Profile List" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:id="@+id/pieLayout">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+
+            <!--Pie chart to display the data-->
+            <org.eazegraph.lib.charts.PieChart
+                android:id="@+id/piechart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:padding="8dp"
+                app:egLegendTextSize="18sp"
+                app:egUsePieRotation="true"
+                app:egValueTextSize="36sp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/membersview3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/cardViewGraph"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:hint="Active Users"-->
+<!--            android:textColor="@color/Active"-->
+<!--            android:textColorHint="@color/lightgreen"-->
+<!--            android:textSize="30sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/membersview4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/membersview3"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="25dp"-->
+<!--            android:textColor="@color/Inactive"-->
+<!--            android:textColorHint="@color/lightred"-->
+<!--            android:hint="In-Active Users"-->
+<!--            android:textSize="30sp" />-->
+
+
+    </RelativeLayout>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/membersview"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:textSize="30sp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="TextView" />-->
+
+
+</RelativeLayout>
